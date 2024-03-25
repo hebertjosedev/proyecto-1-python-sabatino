@@ -44,14 +44,14 @@ while True:
         nota3 = 0
         print("Ingresa los siguientes datos para registrarte en matricula")
         nombre_estudiante = input("Ingresa tu nombre: ")
-        is_boolean = nombre_estudiante
+        is_boolean = True
 
         while is_boolean:
             is_name = nombre_estudiante.isalpha()
-            if nombre_estudiante.isalpha():
+            if is_name == True:
              nombre = nombre_estudiante.capitalize()
              break
-            elif nombre_estudiante != nombre_estudiante.isalpha: 
+            elif is_name == False: 
                 print("Nombre invalido, debes ingresar solo letras")
                 nombre_estudiante_error = input("Ingresa un nombre correcto: ")
                 is_boolean2 = nombre_estudiante_error.isalpha()
@@ -59,88 +59,85 @@ while True:
                     is_boolean = False
                     nombre = nombre_estudiante_error.capitalize()
                     break
+
         apellido_estudiante = input("Ingresa tu apellido: ")
-        is_boolean = apellido_estudiante
+        is_boolean = True
 
         while is_boolean:
             is_apellido = apellido_estudiante.isalpha()
-            if apellido_estudiante.isalpha():
+            if is_apellido == True:
              apellido = apellido_estudiante.capitalize()
              break
-            elif apellido_estudiante != apellido_estudiante.isalpha: 
+            elif is_apellido == False: 
                 print("apellido invalido, debes ingresar solo letras")
                 apellido_estudiante_error = input("Ingresa un apellido correcto: ")
                 is_boolean2 = apellido_estudiante_error.isalpha()
                 if is_boolean2 == True:
-                    print("El apellido ha sido correcto!!")
                     apellido = apellido_estudiante_error.capitalize()
                     is_boolean = False
 
         cedula_estudiante = input("Ingresa tu cedula: ")
-        is_boolean = cedula_estudiante
+        is_boolean = True
 
         while is_boolean:
             is_cedula = cedula_estudiante.isdigit()
-            if cedula_estudiante.isdigit():
+            if is_cedula == True:
              cedula = int(cedula_estudiante)
              break
-            elif cedula_estudiante != cedula_estudiante.isdigit: 
+            elif is_cedula == False: 
                 print("cedula invalido, debes ingresar solo numeros")
                 cedula_estudiante_error = input("Ingresa un cedula correcto: ")
                 is_boolean2 = cedula_estudiante_error.isdigit()
                 if is_boolean2 == True:
-                    print("El cedula ha sido correcto!!")
                     cedula = int(cedula_estudiante_error)
                     is_boolean = False
 
         nota1_estudiante = input("Ingresa tu nota1: ")
-        is_boolean = nota1_estudiante
+        is_boolean = True
 
         while is_boolean:
             is_nota1 = nota1_estudiante.isdigit()
-            if nota1_estudiante.isdigit():
+            if is_nota1 == True:
              nota1 = nota1_estudiante
              break
-            elif nota1_estudiante != nota1_estudiante.isdigit: 
-                print("nota1 invalido, debes ingresar solo numeros del 0 al 20")
+            elif is_nota1 == False: 
+                print("nota1 invalido, debes ingresar solo numeros")
                 nota1_estudiante_error = input("Ingresa un nota1 correcto: ")
                 is_boolean2 = nota1_estudiante_error.isdigit()
                 if is_boolean2 == True:
-                    print("El nota1 ha sido correcto!!")
                     nota1 = int(nota1_estudiante_error)
                     is_boolean = False
 
         nota2_estudiante = input("Ingresa tu nota2: ")
-        is_boolean = nota2_estudiante
+        is_boolean = True
 
         while is_boolean:
             is_nota2 = nota2_estudiante.isdigit()
-            if nota2_estudiante.isdigit():
+            if is_nota2 == True:
              nota2 = nota2_estudiante
              break
-            elif nota2_estudiante != nota2_estudiante.isdigit: 
+            elif is_nota2 == False: 
                 print("nota2 invalido, debes ingresar solo numeros")
                 nota2_estudiante_error = input("Ingresa un nota2 correcto: ")
                 is_boolean2 = nota2_estudiante_error.isdigit()
                 if is_boolean2 == True:
-                    print("El nota2 ha sido correcto!!")
                     nota2 = int(nota2_estudiante_error)
                     is_boolean = False
 
         nota3_estudiante = input("Ingresa tu nota3: ")
-        is_boolean = nota3_estudiante
+        is_boolean = True
 
         while is_boolean:
             is_nota3 = nota3_estudiante.isdigit()
-            if nota3_estudiante.isdigit():
+            if is_nota3 == True:
              nota3 = nota3_estudiante
-             break
-            elif nota3_estudiante != nota3_estudiante.isdigit: 
+             break               
+
+            elif is_nota3 == False: 
                 print("nota3 invalido, debes ingresar solo numeros")
                 nota3_estudiante_error = input("Ingresa un nota3 correcto: ")
                 is_boolean2 = nota3_estudiante_error.isdigit()
                 if is_boolean2 == True:
-                    print("El nota3 ha sido correcto!!")
                     nota3 = int(nota3_estudiante_error)
                     is_boolean = False
 
